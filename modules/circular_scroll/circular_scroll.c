@@ -62,7 +62,7 @@ static int trackpad_scroll_process(struct zmk_input_event *event, void *arg) {
     
     /* Игнорируем малые движения (dead zone) */
     int32_t mag_sq = dx * dx + dy * dy;
-    const int32_t dead_zone_sq = 25; // 5² = 25
+    const int32_t dead_zone_sq = 9; // 5² = 25
     if (mag_sq < dead_zone_sq) {
         tp_state.active = false;
         return 0;
