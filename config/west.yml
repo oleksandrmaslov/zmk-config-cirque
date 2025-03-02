@@ -7,10 +7,6 @@ manifest:
     - name: halfdane
       url-base: https://github.com/halfdane/
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
     # Add this:
     - name: zmk-input-gestures
       remote: halfdane
