@@ -47,7 +47,6 @@
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
-        input-processors = <&circular_scroll>;
         // xy-swap;
         y-invert;
         // x-invert;
