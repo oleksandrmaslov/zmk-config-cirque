@@ -46,10 +46,10 @@
 / {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
-
+        input-processors = <&circular_scroll>;
         device = <&glidepoint>;
         // xy-swap;
-        // y-invert;
+        y-invert;
         // x-invert;
     };
 };
