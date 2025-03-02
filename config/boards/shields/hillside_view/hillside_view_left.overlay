@@ -39,8 +39,6 @@
 &i2c0 {
     status = "okay";
     glidepoint: glidepoint@2a {
-        compatible = "cirque,pinnacle";
-        absolute-mode;
         status = "okay";
     };
 };
@@ -48,6 +46,7 @@
 / {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
+        compatible = "cirque,pinnacle";
         device = <&glidepoint>;
         // xy-swap;
         y-invert;
