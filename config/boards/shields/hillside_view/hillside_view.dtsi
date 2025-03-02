@@ -11,7 +11,6 @@
 // to translate absolute positions to relative positions. If you don't
 // want to use gestures for absolute mode, and you don't want to activate it,
 // you can ignore this line
-#include <behaviors/input_processor_absolute_to_relative.dtsi>
 
 / {
   chosen: chosen {
