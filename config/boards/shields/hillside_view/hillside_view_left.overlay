@@ -46,7 +46,6 @@
 / {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
-        compatible = "cirque,pinnacle";
         device = <&glidepoint>;
         // xy-swap;
         y-invert;
