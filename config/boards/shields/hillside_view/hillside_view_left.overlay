@@ -39,6 +39,8 @@
 &i2c0 {
     status = "okay";
     glidepoint: glidepoint@2a {
+        compatible = "cirque,pinnacle";
+        absolute-mode;
         status = "okay";
     };
 };
