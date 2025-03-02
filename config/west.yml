@@ -10,7 +10,7 @@ manifest:
     #   revision: main
     #   import: app/west.yml
     - name: zmk
-      remote: zmkfirmware
+      remote: badjeff
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-adns9800-driver
