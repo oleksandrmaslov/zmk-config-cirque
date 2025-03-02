@@ -16,7 +16,7 @@ include:
   - board: nice_nano_v2
     shield: hillside_view_left nice_view
     modules:
-      - modules/circular_scroll
+      - modules
   - board: nice_nano_v2
     shield: hillside_view_right nice_view
   - board: nice_nano_v2
