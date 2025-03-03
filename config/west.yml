@@ -7,9 +7,6 @@ manifest:
     - name: halfdane
       url-base: https://github.com/halfdane/
   projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: main   
     - name: zmk-input-gestures
       remote: halfdane
       revision: main
@@ -20,6 +17,10 @@ manifest:
     - name: cirque-input-module
       remote: halfdane
       revision: absolute_mode
+    - name: zmk
+      remote: badjeff
+      revision: feat/pointers-with-input-processors
+      import: app/west.yml
     - name: zmk-adns9800-driver
       remote: badjeff
       revision: main
@@ -59,5 +60,8 @@ manifest:
     - name: zmk-kscan-blackout
       remote: badjeff
       revision: main      
+    - name: cirque-input-module
+      remote: badjeff
+      revision: main
   self:
     path: config
