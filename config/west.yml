@@ -9,8 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
-      import: app/west.yml    
+      revision: main   
     - name: zmk-input-gestures
       remote: halfdane
       revision: main
@@ -24,6 +23,7 @@ manifest:
     - name: zmk
       remote: badjeff
       revision: feat/pointers-move-scroll
+      import: app/west.yml  
     - name: zmk-adns9800-driver
       remote: badjeff
       revision: main
