@@ -22,7 +22,7 @@
   
 };
 
-/ {
+{
   behaviors {
     // momentary on hold, toggle on tap
     mo_to: behavior_mo_to {
