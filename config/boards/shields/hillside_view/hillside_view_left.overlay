@@ -43,14 +43,6 @@
             absolute-mode;
     absolute-mode-scale-to-width = <1024>;
     absolute-mode-scale-to-height = <1024>;
-
-    /* Включаем Circular Scroll.
-       Если касание начинается в пределах 10% внешнего кольца,
-       то угловое движение интерпретируется как прокрутка. */
-    circular-scroll;
-    circular-scroll-rim-percent = <10>;
-    circular-scroll-width = <1024>;
-    circular-scroll-height = <1024>;
     };
 };
 
@@ -58,12 +50,6 @@
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
-        input-processors = < 
-        &zip_gestures
-        &zip_absolute_to_relative
-        &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
-        &zip_temp_layer 3 100
-        >;
         // xy-swap;
         // y-invert;
         // x-invert;
