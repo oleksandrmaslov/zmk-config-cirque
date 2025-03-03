@@ -20,10 +20,6 @@ manifest:
     - name: cirque-input-module
       remote: halfdane
       revision: absolute_mode
-    - name: zmk
-      remote: badjeff
-      revision: feat/pointers-move-scroll
-      import: app/west.yml  
     - name: zmk-adns9800-driver
       remote: badjeff
       revision: main
