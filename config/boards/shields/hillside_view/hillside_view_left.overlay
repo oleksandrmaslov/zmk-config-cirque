@@ -40,6 +40,17 @@
     status = "okay";
     glidepoint: glidepoint@2a {
         status = "okay";
+            absolute-mode;
+    absolute-mode-scale-to-width = <1024>;
+    absolute-mode-scale-to-height = <1024>;
+
+    /* Включаем Circular Scroll.
+       Если касание начинается в пределах 10% внешнего кольца,
+       то угловое движение интерпретируется как прокрутка. */
+    circular-scroll;
+    circular-scroll-rim-percent = <10>;
+    circular-scroll-width = <1024>;
+    circular-scroll-height = <1024>;
     };
 };
 
