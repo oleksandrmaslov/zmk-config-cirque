@@ -7,6 +7,7 @@
 
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors/mouse_keys.dtsi>
+#include <input/processors.dtsi>
 
 
 #define DEF 0  // layer shortcuts, must match order in which they are defined below
@@ -24,6 +25,20 @@
   quick-tap-ms = <125>;
   
 };
+
+{
+  /* Узел для настройки жестов (на верхнем уровне, не вложен никуда) */
+  zip_gestures: zip_gestures {
+    compatible = "zmk,input-listener";
+    tap-detection;
+    tap-timout-ms = <120>;
+    /* При необходимости можно добавить:
+       prevent_movement_during_tap;
+       inertial-cursor;
+       inertial-cursor-velocity-threshold-ms = <20>;
+       inertial-cursor-decay-percent = <98>;
+       и другие опции. */
+  };
 
 / {
   behaviors {
