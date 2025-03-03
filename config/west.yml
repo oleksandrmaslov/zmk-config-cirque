@@ -60,8 +60,5 @@ manifest:
     - name: zmk-kscan-blackout
       remote: badjeff
       revision: main      
-    - name: cirque-input-module
-      remote: badjeff
-      revision: main
   self:
     path: config
