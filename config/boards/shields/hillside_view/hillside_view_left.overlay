@@ -48,7 +48,7 @@
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
         // xy-swap;
-        y-invert;
+        // y-invert;
         // x-invert;
     };
 };
