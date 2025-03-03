@@ -26,6 +26,12 @@
   
 };
 
+i2c0 {
+  status = "okay";
+  glidepoint: glidepoint@2a {
+    compatible = "cirque,pinnacle";
+    status = "okay";
+
 {
   /* Узел для настройки жестов (на верхнем уровне, не вложен никуда) */
   zip_gestures: zip_gestures {
@@ -39,7 +45,7 @@
        inertial-cursor-decay-percent = <98>;
        и другие опции. */
   };
-
+};
 / {
   behaviors {
     // momentary on hold, toggle on tap
