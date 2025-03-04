@@ -51,6 +51,7 @@
 / {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
+        status = "okay";
         device = <&glidepoint>;
         input-processors = <
             // Add this. It should come before the inbuilt input processsors that
