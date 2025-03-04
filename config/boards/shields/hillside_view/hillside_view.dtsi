@@ -178,19 +178,14 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
 
 / {
   input-processors = <
-      &zip_gestures
+    &zip_gestures {
+      tap-detection;
+    };
       &zip_absolute_to_relative
       &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
       &zip_temp_layer 3 100
-  >;
-};
-
-/* Override zip_gestures properties (placed as its own top-level block) */
-&zip_gestures {
-    tap-detection;
-};
-
-
+    >;
+  };
 };
 
 nice_view_spi: &spi1 {
