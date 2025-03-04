@@ -188,10 +188,10 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
       &zip_temp_layer 3 100
     >;
   };
-};
 
 &zip_gestures {
     tap-detection;
+    tap-timout-ms=<120>;
 };
 
 nice_view_spi: &spi1 {
