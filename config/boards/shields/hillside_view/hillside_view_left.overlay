@@ -54,10 +54,7 @@
         status = "okay";
         device = <&glidepoint>;
         input-processors = <
-            // Add this. It should come before the inbuilt input processsors that
-            // rely on relative mode:
             &zip_absolute_to_relative
-
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
             &zip_temp_layer 3 100
         >;
