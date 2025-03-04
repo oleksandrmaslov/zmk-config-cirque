@@ -10,6 +10,8 @@
 #include <dt-bindings/zmk/input_transform.h>
 // to use gestures this is always necessary:
 #include <behaviors/input_processor_gestures.dtsi>
+#include <behaviors/input_processor_absolute_to_relative.dtsi>
+
 
 / {
   chosen: chosen {
