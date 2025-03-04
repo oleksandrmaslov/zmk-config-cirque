@@ -13,6 +13,7 @@ manifest:
     - name: zmk
       remote: badjeff
       revision: feat/pointers-with-input-processors
+      import: app/west.yml
     # Add these if you want to use absolute mode:
     - name: zmk-input-processors
       remote: halfdane
@@ -20,10 +21,6 @@ manifest:
     - name: cirque-input-module
       remote: halfdane
       revision: absolute_mode
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
     - name: zmk-adns9800-driver
       remote: badjeff
       revision: main
