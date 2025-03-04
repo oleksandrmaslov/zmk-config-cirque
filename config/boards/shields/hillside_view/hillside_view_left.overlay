@@ -53,6 +53,7 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&glidepoint>;
+        status = "okay";
         input-processors = <
             &zip_absolute_to_relative
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
