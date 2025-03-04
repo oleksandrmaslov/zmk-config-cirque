@@ -49,9 +49,6 @@
     status = "okay";
     glidepoint: glidepoint@2a {
         status = "okay";
-            absolute-mode;
-    absolute-mode-scale-to-width = <1024>;
-    absolute-mode-scale-to-height = <1024>;
     };
 };
 
