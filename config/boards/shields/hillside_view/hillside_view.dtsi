@@ -6,8 +6,11 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+// to use gestures this is always necessary:
 #include <behaviors/input_processor_gestures.dtsi>
-#include <behaviors/input_processor_absolute_to_relative.dtsi>
+
 / {
   chosen: chosen {
     zmk,kscan = &kscan0;
