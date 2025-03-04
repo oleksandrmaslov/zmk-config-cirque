@@ -51,13 +51,15 @@
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
-        &zip_gestures {
-          tap-detection;
-      };
         // xy-swap;
         // y-invert;
         // x-invert;
     };
+};
+
+/* Override zip_gestures properties (placed as its own top-level block) */
+&zip_gestures {
+    tap-detection;
 };
 
 / {
