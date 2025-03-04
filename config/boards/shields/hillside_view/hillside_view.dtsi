@@ -176,7 +176,7 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
         // no-taps;
     };
 
-{
+/ {
   input-processors = <
       &zip_gestures
       &zip_absolute_to_relative
