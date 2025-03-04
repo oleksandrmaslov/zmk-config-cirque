@@ -175,26 +175,11 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
         reg = <0x2a>;
         status = "disabled";
         dr-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH)>;
-        absolute-mode;
         sensitivity = "2x";
         // sleep;
         // no-taps;
     };
  };
-
-/ {
-  input-processors = <
-      &zip_gestures
-      &zip_absolute_to_relative
-      &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
-      &zip_temp_layer 3 100
-    >;
-  };
-
-&zip_gestures {
-    tap-detection;
-    tap-timout-ms=<120>;
-};
 
 nice_view_spi: &spi1 {
   compatible = "nordic,nrf-spim";
