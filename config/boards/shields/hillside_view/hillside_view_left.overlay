@@ -53,15 +53,6 @@
 };
 
 / {
-  /* The order matters if you depend on sequential processing */
-  input-processors = <
-      &zip_gestures
-      &zip_absolute_to_relative
-      &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
-      &zip_temp_layer 3 100
-  >;
-};
-/ {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
@@ -69,9 +60,4 @@
         // y-invert;
         // x-invert;
     };
-};
-
-/* Override zip_gestures properties (placed as its own top-level block) */
-&zip_gestures {
-    tap-detection;
 };
