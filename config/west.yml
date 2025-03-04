@@ -10,6 +10,9 @@ manifest:
     - name: zmk-input-gestures
       remote: halfdane
       revision: main
+    - name: zmk
+      remote: badjeff
+      revision: feat/pointers-with-input-processors
     # Add these if you want to use absolute mode:
     - name: zmk-input-processors
       remote: halfdane
