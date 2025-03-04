@@ -175,6 +175,7 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
         // sleep;
         // no-taps;
     };
+ };
 
 / {
   input-processors = <
