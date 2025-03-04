@@ -5,6 +5,7 @@
  */
 
 #include "hillside_view.dtsi"
+#include <input/processors.dtsi>
 
 &kscan0  {
     col-gpios
@@ -50,9 +51,21 @@
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
+        &zip_gestures {
+          tap-detection;
+      };
         // xy-swap;
         // y-invert;
         // x-invert;
     };
 };
 
+/ {
+  /* The order matters if you depend on sequential processing */
+  input-processors = <
+      &zip_gestures
+      &zip_absolute_to_relative
+      &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
+      &zip_temp_layer 3 100
+  >;
+};
