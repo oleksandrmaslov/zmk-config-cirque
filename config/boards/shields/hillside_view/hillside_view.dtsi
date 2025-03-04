@@ -175,10 +175,6 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
         // sleep;
         // no-taps;
     };
-/* Override zip_gestures properties (placed as its own top-level block) */
-&zip_gestures {
-    tap-detection;
-};
 
 / {
   input-processors = <
@@ -188,6 +184,12 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
       &zip_temp_layer 3 100
   >;
 };
+
+/* Override zip_gestures properties (placed as its own top-level block) */
+&zip_gestures {
+    tap-detection;
+};
+
 
 };
 
