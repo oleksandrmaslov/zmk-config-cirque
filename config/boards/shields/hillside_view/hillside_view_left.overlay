@@ -64,11 +64,6 @@
     tap-detection;
 };
 
-/* Ensure zip_temp_layer expects 2 extra cells */
-&zip_temp_layer {
-    #input-processor-cells = <2>;
-};
-
 / {
   /* The order matters if you depend on sequential processing */
   input-processors = <
