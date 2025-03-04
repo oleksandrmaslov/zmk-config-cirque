@@ -65,6 +65,13 @@
 };
 
 / {
+    zip_absolute_to_relative: zip_absolute_to_relative {
+        compatible = "zmk,input_processor_absolute_to_relative";
+        /* add any additional properties here if needed */
+    };
+};
+
+/ {
   /* The order matters if you depend on sequential processing */
   input-processors = <
       &zip_gestures
