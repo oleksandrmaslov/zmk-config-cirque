@@ -50,6 +50,7 @@
 
 / {
   tpad0: tpad0 {
+        status = "okay";
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&glidepoint>;
