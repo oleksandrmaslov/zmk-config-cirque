@@ -6,12 +6,14 @@ manifest:
       url-base: https://github.com/badjeff
     - name: halfdane
       url-base: https://github.com/halfdane
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk-input-gestures
       remote: halfdane
       revision: main
     - name: zmk
-      remote: badjeff
+      remote: petejohanson
       revision: feat/pointers-with-input-processors
       import: app/west.yml
     # Add these if you want to use absolute mode:
