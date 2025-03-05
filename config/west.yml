@@ -15,8 +15,8 @@ manifest:
       remote: halfdane
       revision: main
     - name: cirque-input-module
-      remote: halfdane
-      revision: absolute_mode
+      remote: badjeff
+      revision: main
     - name: zmk
       remote: badjeff
       revision: feat/pointers-with-input-processors
