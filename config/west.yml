@@ -19,8 +19,8 @@ manifest:
       remote: halfdane
       revision: main
     - name: cirque-input-module
-      remote: badjeff
-      revision: main
+      remote: halfdane
+      revision: absolute_mode
     - name: zmk-analog-input-driver
       remote: badjeff
       revision: main
