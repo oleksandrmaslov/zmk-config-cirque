@@ -6,6 +6,9 @@
 
 #include "hillside_view.dtsi"
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+#include <behaviors/input_processor_gestures.dtsi>
+#include <behaviors/input_processor_absolute_to_relative.dtsi>
 
 // to translate absolute positions to relative positions. If you don't
 // want to use gestures for absolute mode, and you don't want to activate it,
@@ -48,10 +51,24 @@
     };
 };
 
+&zip_gestures {
+    tap-detection;
+    prevent_movement_during_tap;
+
+    circular-scroll;
+    circular-scroll-rim-percent=<15>;
+};
+
 / {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
         device = <&glidepoint>;
+        input-processors = <
+            &zip_gestures
+            &zip_absolute_to_relative
+            &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
+            &zip_temp_layer 3 100
+        >;
         // xy-swap;
         // y-invert;
         // x-invert;
