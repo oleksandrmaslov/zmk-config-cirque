@@ -6,9 +6,6 @@
 
 #include "hillside_view.dtsi"
 #include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
-// to use gestures this is always necessary:
-#include <behaviors/input_processor_gestures.dtsi>
 
 // to translate absolute positions to relative positions. If you don't
 // want to use gestures for absolute mode, and you don't want to activate it,
