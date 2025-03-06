@@ -10,9 +10,6 @@ manifest:
     - name: cirque-input-module
       remote: badjeff
       revision: main
-    - name: zmk-input-processors
-      remote: badjeff
-      revision: main
     - name: zmk
       remote: zmkfirmware
       revision: main
