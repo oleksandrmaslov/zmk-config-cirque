@@ -49,16 +49,15 @@
 };
 
 / {
-  tpad0: tpad0 {
-        status = "okay";
+    glidepoint_listener: glidepoint_listener {
         compatible = "zmk,input-listener";
+        status = "okay";
         device = <&glidepoint>;
-        input-processors = 
-            <&zip_absolute_to_relative>,
-            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_temp_layer 3 100>;
-        // xy-swap;
-        // y-invert;
-        // x-invert;
+        input-processors = <
+            &zip_gestures
+            &zip_absolute_to_relative
+            &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
+            &zip_temp_layer 3 100
+        >;
     };
 };
