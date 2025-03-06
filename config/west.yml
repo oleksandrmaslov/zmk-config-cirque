@@ -11,8 +11,8 @@ manifest:
       remote: halfdane
       revision: main
     - name: zmk
-      remote: badjeff
-      revision: feat/pointers-with-input-processors
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
     # Add these if you want to use absolute mode:
     - name: zmk-input-processors
