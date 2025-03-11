@@ -9,7 +9,6 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <input/processors.dtsi>
 
-
 #define DEF 0  // layer shortcuts, must match order in which they are defined below
 #define NUM 1
 #define SYM 2
