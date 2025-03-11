@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/oleksandrmaslov
   projects:
     - name: zmk-input-gestures
-      remote: halfdane
+      remote: oleksandrmaslov
       revision: main
     # Add these if you want to use absolute mode:
     - name: zmk-input-processors
