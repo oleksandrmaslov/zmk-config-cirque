@@ -12,7 +12,6 @@
 #include <behaviors/input_processor_absolute_to_relative.dtsi>
 // to use gestures this is always necessary:
 
-
 / {
   chosen: chosen {
     zmk,kscan = &kscan0;
