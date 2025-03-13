@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/halfdane/
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: badjeff
+      revision: feat/pointers-with-input-processors
       import: app/west.yml
     # Add this:
     - name: zmk-input-gestures
