@@ -54,7 +54,6 @@
 &zip_gestures {
     tap-detection;
     circular-scroll;
-    scroll-sensitivity=<50>;
     circular-scroll-rim-percent=<15>;
 };
 
