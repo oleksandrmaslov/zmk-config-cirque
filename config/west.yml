@@ -11,8 +11,7 @@ manifest:
   projects:
     - name: zmk-input-gestures
       remote: oleksandrmaslov
-      revision: no_pm
-    # Add these if you want to use absolute mode:
+      revision: m # Add these if you want to use absolute mode:
     - name: zmk-input-processors
       remote: halfdane
       revision: main
