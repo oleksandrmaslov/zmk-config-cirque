@@ -55,7 +55,6 @@
     tap-detection;
     circular-scroll;
     circular-scroll-rim-percent=<15>;
-    scroll-sensitivity = <10>; 
 };
 
 / {
