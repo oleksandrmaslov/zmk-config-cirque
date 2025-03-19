@@ -2,7 +2,7 @@
  * Copyright (c) 2022 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- */
+*/
 
 #include "hillside_view.dtsi"
 #include <input/processors.dtsi>
