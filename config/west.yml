@@ -17,7 +17,7 @@ manifest:
       remote: halfdane
       revision: main
     - name: cirque-input-module
-      remote: halfdane
+      remote: oleksandrmaslov
       revision: absolute_mode
     - name: zmk
       remote: zmkfirmware
