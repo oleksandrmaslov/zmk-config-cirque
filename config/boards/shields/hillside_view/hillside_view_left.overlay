@@ -66,7 +66,6 @@
             &zip_absolute_to_relative
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
             &zip_temp_layer 3 100
-            &zip_scroll_scaler 1 3
         >;
         // xy-swap;
         // y-invert;
