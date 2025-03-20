@@ -9,8 +9,6 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <behaviors/input_processor_gestures.dtsi>
 #include <behaviors/input_processor_absolute_to_relative.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
-
 // to translate absolute positions to relative positions. If you don't
 // want to use gestures for absolute mode, and you don't want to activate it,
 // you can ignore this line
@@ -52,18 +50,6 @@
     };
 };
 
-
-/ {
-    input_processors {
-        scaler_input: zip_scroll_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL>;
-            track-remainders;
-        };
-    };
-};
 
 &zip_gestures {
     tap-detection;
