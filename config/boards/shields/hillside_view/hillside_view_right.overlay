@@ -22,7 +22,7 @@
 };
 
 &right_encoder {
-  status = "okay";
+  status = "disabled";
 };
 
 &chosen {
@@ -30,11 +30,11 @@
 };
 
 &nice_view_spi {
-  status = "okay";
+  status = "disabled";
 };
 
 &nice_view {
-  status = "okay";
+  status = "disabled";
 };
 
 &i2c0 {
