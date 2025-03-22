@@ -179,6 +179,7 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
 };
 
 nice_view_spi: &spi1 {
+  status = "disabled";
   compatible = "nordic,nrf-spim";
   pinctrl-0 = <&spi1_default>;
   pinctrl-1 = <&spi1_sleep>;
@@ -186,6 +187,7 @@ nice_view_spi: &spi1 {
   cs-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
 
   nice_view: ls0xx@0 {
+    status = "disabled";
     compatible = "sharp,ls0xx";
     spi-max-frequency = <1000000>;
     reg = <0>;
