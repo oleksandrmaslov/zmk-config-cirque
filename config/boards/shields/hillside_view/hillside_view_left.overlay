@@ -36,6 +36,13 @@
   status = "okay";
 };
 
+&i2c0 {
+    status = "disabled";
+    glidepoint0: glidepoint@2a {
+        status = "disabled";
+    };
+};
+
 / {
     /* define virtual input, will be resurrected for emitting input event */
 	/* NOTE: set `device = <&glidepoint1>` in `zmk,input-listener` */
