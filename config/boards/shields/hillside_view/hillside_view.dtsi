@@ -138,6 +138,7 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
         sensitivity = "1x";
         sleep;
         no-taps;
+        absolute_mode;
     };
 
 };
@@ -160,24 +161,24 @@ nice_view_spi: &spi1 {
   };
 };
 
-// / {
-// 	/* assign `input-listener` to all pointing devices */
-// 	/* &glidepoint0 on central, &glidepoint1 on peripheral */
-//     tpad_central_listener {
-//         compatible = "zmk,input-behavior-listener";
-//         device = <&glidepoint0>;
-//         y-invert;
-//         scale-multiplier = <3>;
-//         // xy-swap;
-//         // x-invert;
-// 	};
-// 
-//     tpad_peripheral_listener {
-//         compatible = "zmk,input-behavior-listener";
-//         device = <&glidepoint1>;
-//         y-invert;
-//         scale-multiplier = <3>;
-//         // xy-swap;
-//         // x-invert;
-// 	};
-// };
+/ {
+ 	/* assign `input-listener` to all pointing devices */
+ 	/* &glidepoint0 on central, &glidepoint1 on peripheral */
+     tpad_central_listener {
+         compatible = "zmk,input-behavior-listener";
+         device = <&glidepoint0>;
+         y-invert;
+         scale-multiplier = <3>;
+         // xy-swap;
+         // x-invert;
+ 	};
+ 
+     tpad_peripheral_listener {
+         compatible = "zmk,input-behavior-listener";
+         device = <&glidepoint1>;
+         y-invert;
+         scale-multiplier = <3>;
+        // xy-swap;
+        // x-invert;
+ 	};
+ };
