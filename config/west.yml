@@ -4,11 +4,21 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: halfdane
+      url-base: https://github.com/halfdane/
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
   projects:
-    # - name: zmk
-    #   remote: zmkfirmware
-    #   revision: main
-    #   import: app/west.yml
+    - name: zmk-input-gestures
+      remote: oleksandrmaslov
+      revision: main
+      # Add these if you want to use absolute mode:
+    - name: zmk-input-processors
+      remote: halfdane
+      revision: main
+    - name: cirque-input-module
+      remote: halfdane
+      revision: absolute_mode
     - name: zmk
       remote: badjeff
       revision: feat/pointers-move-scroll
