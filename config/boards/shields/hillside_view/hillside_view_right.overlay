@@ -64,7 +64,7 @@
 / {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
-        device = <&glidepoint1>;
+        device = <&glidepoint0>;
         input-processors = <
             &zip_gestures
             &zip_absolute_to_relative
