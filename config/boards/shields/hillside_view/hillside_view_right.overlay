@@ -57,6 +57,7 @@
 &zip_gestures {
     tap-detection;
     prevent_movement_during_tap;
+    inertial-cursor;
     circular-scroll;
     circular-scroll-rim-percent=<15>;
 };
