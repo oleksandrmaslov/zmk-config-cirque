@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk-input-gestures
       remote: oleksandrmaslov
-      revision: main
+      revision: peripheral
       # Add these if you want to use absolute mode:
     - name: zmk-input-processors
       remote: halfdane
@@ -62,8 +62,5 @@ manifest:
     - name: zmk-kscan-blackout
       remote: badjeff
       revision: main      
-    - name: cirque-input-module
-      remote: badjeff
-      revision: main
   self:
     path: config
