@@ -78,11 +78,11 @@
     };
 };
 
-// / {
-//    /* THIS only makes keymap binding happy, nothing happens on peripheral side */
-//	glidepoint1: virtual_input {
-//		compatible = "zmk,virtual-input";
-//	};
+ / {
+      /* THIS only makes keymap binding happy, nothing happens on peripheral side */
+	    glidepoint1: virtual_input {
+  		compatible = "zmk,virtual-input";
+  	};
 //
 //    input_relay_config_102 {
 //        compatible = "zmk,split-peripheral-input-relay";
