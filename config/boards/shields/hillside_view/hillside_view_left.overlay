@@ -66,6 +66,7 @@
     tap-detection;
     prevent_movement_during_tap;
     inertial-cursor;
+    inertial-cursor-decay-percent=<1000>;
     circular-scroll;
     circular-scroll-rim-percent=<15>;
 };
