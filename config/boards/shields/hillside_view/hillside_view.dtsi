@@ -141,7 +141,7 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
 
 &spi3 {
   compatible = "nordic,nrf-spim";
-  status = "okay";
+  status = "disabled";
 
   pinctrl-0 = <&spi3_default>;
   pinctrl-1 = <&spi3_sleep>;
