@@ -179,28 +179,10 @@ nice_view_spi: &spi1 {
 &zip_gestures {
     tap-detection;
     prevent_movement_during_tap;
-    inertial-cursor;
-    inertial-cursor-decay-percent=<100>;
     circular-scroll;
     circular-scroll-rim-percent=<15>;
 };
 
-/ {
-  tpad0: tpad0 {
-        compatible = "zmk,input-listener";
-        device = <&glidepoint1>;
-        input-processors = <
-            &zip_gestures
-            &zip_absolute_to_relative
-            &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
-            &zip_temp_layer 3 100
-            &zip_scroll_scaler 1 10
-        >;
-        // xy-swap;
-        // y-invert;
-        // x-invert;
-    };
-};
 
 / {
  	/* assign `input-listener` to all pointing devices */
@@ -208,6 +190,12 @@ nice_view_spi: &spi1 {
      tpad_central_listener {
          compatible = "zmk,input-listener";
          device = <&glidepoint0>;
+            input-processors = <
+            &zip_gestures
+            &zip_absolute_to_relative
+            &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
+            &zip_temp_layer 3 100
+            &zip_scroll_scaler 1 10
          // xy-swap;
          // x-invert;
  	};
