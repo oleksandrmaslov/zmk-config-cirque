@@ -37,9 +37,9 @@
 };
 
 &i2c0 {
-    status = "okay";
+    status = "disabled";
     glidepoint0: glidepoint@2a {
-        status = "okay";
+        status = "disabled";
     };
 };
 
