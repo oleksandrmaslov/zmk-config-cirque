@@ -196,6 +196,7 @@ nice_view_spi: &spi1 {
             &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
             &zip_temp_layer 3 100
             &zip_scroll_scaler 1 10
+            >;
          // xy-swap;
          // x-invert;
  	};
