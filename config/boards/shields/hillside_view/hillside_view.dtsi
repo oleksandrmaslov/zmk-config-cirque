@@ -188,7 +188,7 @@ nice_view_spi: &spi1 {
 / {
   tpad0: tpad0 {
         compatible = "zmk,input-listener";
-        device = <&glidepoint0>;
+        device = <&glidepoint1>;
         input-processors = <
             &zip_gestures
             &zip_absolute_to_relative
