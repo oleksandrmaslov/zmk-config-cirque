@@ -31,7 +31,7 @@
 };
 
 &nice_view {
-  status = "disabled";
+  status = "okay";
 };
 
 &i2c0 {
