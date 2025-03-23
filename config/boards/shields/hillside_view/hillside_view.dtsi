@@ -6,6 +6,9 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
+// to use gestures this is always necessary:
+#include <behaviors/input_processor_gestures.dtsi>
+#include <behaviors/input_processor_absolute_to_relative.dtsi>
 
 / {
   chosen: chosen {
@@ -165,18 +168,16 @@ nice_view_spi: &spi1 {
  	/* assign `input-listener` to all pointing devices */
  	/* &glidepoint0 on central, &glidepoint1 on peripheral */
      tpad_central_listener {
-         compatible = "zmk,input-behavior-listener";
+         compatible = "zmk,input-listener";
          device = <&glidepoint0>;
-         y-invert;
          scale-multiplier = <3>;
          // xy-swap;
          // x-invert;
  	};
  
      tpad_peripheral_listener {
-         compatible = "zmk,input-behavior-listener";
+         compatible = "zmk,input-listener";
          device = <&glidepoint1>;
-         y-invert;
          scale-multiplier = <3>;
         // xy-swap;
         // x-invert;
