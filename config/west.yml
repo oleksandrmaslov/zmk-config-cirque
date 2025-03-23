@@ -20,8 +20,8 @@ manifest:
       remote: halfdane
       revision: absolute_mode
     - name: zmk
-      remote: badjeff
-      revision: feat/pointers-move-scroll
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
     - name: zmk-adns9800-driver
       remote: badjeff
