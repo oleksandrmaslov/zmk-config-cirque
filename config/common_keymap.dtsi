@@ -17,14 +17,6 @@
 
 #define MO_TO(layer) &mo_to layer layer   // Macro to apply momentary-layer-on-hold/to-layer-on-tap to a specific layer
 
-    ib_wheel_scaler: ib_wheel_scaler {
-            compatible = "zmk,input-behavior-scaler";
-            #binding-cells = <2>;
-            evt-type = <INPUT_EV_REL>;
-            input-code = <INPUT_REL_WHEEL>;
-    };
-};
-
 &mt {
   flavor = "tap-preferred";
   tapping-term-ms = <300>; 
