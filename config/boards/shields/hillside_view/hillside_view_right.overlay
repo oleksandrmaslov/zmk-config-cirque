@@ -33,10 +33,6 @@
   status = "disabled";
 };
 
-&nice_view {
-  status = "okay";
-};
-
 &i2c0 {
     status = "okay";
     glidepoint0: glidepoint@2a {
