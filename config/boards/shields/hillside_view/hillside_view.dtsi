@@ -180,7 +180,7 @@ nice_view_spi: &spi1 {
     tap-detection;
     prevent_movement_during_tap;
     inertial-cursor;
-    inertial-cursor-decay-percent=<1000>;
+    inertial-cursor-decay-percent=<100>;
     circular-scroll;
     circular-scroll-rim-percent=<15>;
 };
