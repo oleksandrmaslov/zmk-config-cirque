@@ -29,9 +29,7 @@
     zephyr,display-;
 };
 
-&nice_view_spi {
-  status = "disabled";
-};
+
 
 &i2c0 {
     status = "okay";
