@@ -128,14 +128,11 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                       RC
 
 
 &i2c0 {
-    status = "okay";
+    status = "disabled";
     glidepoint0: glidepoint@2a {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
-        status = "okay";
-        pinctrl-0 = <&i2c0_default>;
-        pinctrl-1 = <&i2c0_sleep>;
-        pinctrl-names = "default", "sleep";
+        status = "disabled";
         dr-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH)>;
 
         sensitivity = "1x";
