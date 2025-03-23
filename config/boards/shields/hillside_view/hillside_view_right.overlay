@@ -25,6 +25,9 @@
   status = "disabled";
 };
 
+&chosen {
+  zephyr,display = NULL;
+};
 
 &nice_view_spi {
   status = "disabled";
