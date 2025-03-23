@@ -18,13 +18,13 @@
 };
 
 &left_encoder {
-    status = "okay";
+    status = "disabled";
   a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
   b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 };
 
 &chosen {
-  zephyr,display = &nice_view;
+  // zephyr,display = &nice_view;
 };
 
 // nice view bus
