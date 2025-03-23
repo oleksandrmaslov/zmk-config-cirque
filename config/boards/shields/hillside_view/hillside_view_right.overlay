@@ -42,44 +42,6 @@
     };
 };
 
-/ {
-    input_processors {
-        scroll_scaler: zip_scroll_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL>;
-            track-remainders;
-        };
-    };
-};
-
-&zip_gestures {
-    tap-detection;
-    prevent_movement_during_tap;
-    inertial-cursor;
-    inertial-cursor-decay-percent=<1000>;
-    circular-scroll;
-    circular-scroll-rim-percent=<15>;
-};
-
-/ {
-  tpad0: tpad0 {
-        compatible = "zmk,input-listener";
-        device = <&glidepoint1>;
-        input-processors = <
-            &zip_gestures
-            &zip_absolute_to_relative
-            &zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)
-            &zip_temp_layer 3 100
-            &zip_scroll_scaler 1 10
-        >;
-        // xy-swap;
-        // y-invert;
-        // x-invert;
-    };
-};
-
 / { 
       /* THIS only makes keymap binding happy, nothing happens on peripheral side */
 	    glidepoint1: virtual_input {
