@@ -191,13 +191,6 @@ nice_view_spi: &spi1 {
      tpad_central_listener {
          compatible = "zmk,input-listener";
          device = <&glidepoint0>;
-         // xy-swap;
-         // x-invert;
- 	};
- 
-     tpad_peripheral_listener {
-         compatible = "zmk,input-listener";
-         device = <&glidepoint1>;
             input-processors = <
             &zip_gestures
             &zip_absolute_to_relative
@@ -205,6 +198,13 @@ nice_view_spi: &spi1 {
             &zip_temp_layer 3 100
             &zip_scroll_scaler 1 10
             >;
+         // xy-swap;
+         // x-invert;
+ 	};
+ 
+     tpad_peripheral_listener {
+         compatible = "zmk,input-listener";
+         device = <&glidepoint1>;
         // xy-swap;
         // x-invert;
  	};
