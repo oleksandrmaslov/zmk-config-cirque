@@ -62,7 +62,7 @@
         pointer_accel: pointer_accel {
             compatible = "zmk,input-processor-acceleration";
             #input-processor-cells = <0>;
-            type = <INPUT_EV_REL>;
+            input-type = <INPUT_EV_REL>;
             codes = <INPUT_REL_X INPUT_REL_Y>;
             track-remainders;
             min-factor = <800>;        // 0.8x at very slow speeds
