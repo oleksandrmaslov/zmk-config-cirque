@@ -30,6 +30,14 @@
   b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 };
 
+/ {
+    soc {
+        rtc1: rtc@40011000 {
+            status = "okay";
+        };
+    };
+};
+
 &chosen {
   zephyr,display = &nice_view;
 };
