@@ -63,7 +63,6 @@
             compatible = "zmk,input-processor-acceleration";
             #input-processor-cells = <0>;
             input-type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_X INPUT_REL_Y>;
             track-remainders;
             min-factor = <800>;        // 0.8x at very slow speeds
             max-factor = <3000>;       // 3.0x at fast speeds
