@@ -59,17 +59,6 @@
             codes = <INPUT_REL_WHEEL>;
             track-remainders;
         };
-        pointer_accel: pointer_accel {
-            compatible = "zmk,input-processor-acceleration";
-            #input-processor-cells = <0>;
-            input-type = <INPUT_EV_REL>;
-            track-remainders;
-            min-factor = <800>;        // 0.8x at very slow speeds
-            max-factor = <3000>;       // 3.0x at fast speeds
-            speed-threshold = <1200>;  // 1200 counts/sec for 1x
-            speed-max = <6000>;        // 6000 counts/sec for max accel
-            acceleration-exponent = <2>; // quadratic curve
-        };
     };
 };
 
@@ -84,7 +73,6 @@
         device = <&glidepoint>;
         input-processors = <
             &zip_gestures
-            &pointer_accel
             &zip_scroll_scaler 1 10
         >;
         // xy-swap;
