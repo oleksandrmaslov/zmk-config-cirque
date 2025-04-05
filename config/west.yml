@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk-input-gestures
       remote: oleksandrmaslov
-      revision: fix
+      revision: main
     - name: zmk-pointing-acceleration
       remote: oleksandrmaslov
       revision: main
