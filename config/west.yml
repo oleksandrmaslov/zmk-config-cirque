@@ -12,16 +12,9 @@ manifest:
       revision: main
       import: app/west.yml
     # Add these if you want to use absolute mode:
-    - name: zmk-input-gestures
-      remote: halfdane
-      revision: main
-    # Add these if you want to use absolute mode:
-    - name: zmk-input-processors
-      remote: halfdane
-      revision: main
     - name: cirque-input-module
       remote: halfdane
-      revision: absolute_mode
+      revision: main
     - name: zmk-analog-input-driver
       remote: badjeff
       revision: main
