@@ -8,7 +8,7 @@ manifest:
       url-base: https://github.com/halfdane/
   projects:
     - name: cirque-input-module
-      remote: badjeff
+      remote: halfdane
       revision: main
     - name: zmk
       remote: zmkfirmware
