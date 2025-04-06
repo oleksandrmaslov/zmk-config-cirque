@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: halfdane
       url-base: https://github.com/halfdane
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,7 +15,7 @@ manifest:
       import: app/west.yml
     # Add these if you want to use absolute mode:
     - name: cirque-input-module
-      remote: halfdane
+      remote: petejohanson
       revision: main
     - name: zmk-analog-input-driver
       remote: badjeff
