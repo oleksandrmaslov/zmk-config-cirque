@@ -9,8 +9,9 @@ manifest:
     - name: oleksandrmaslov
       url-base: https://github.com/oleksandrmaslov      
   projects:
-    - name: oleksandrmaslov
-      url-base: https://github.com/oleksandrmaslov
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
+      revision: main
     - name: cirque-input-module
       remote: halfdane
       revision: main
