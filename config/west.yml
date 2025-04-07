@@ -6,7 +6,11 @@ manifest:
       url-base: https://github.com/badjeff
     - name: halfdane
       url-base: https://github.com/halfdane/
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov      
   projects:
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
     - name: cirque-input-module
       remote: halfdane
       revision: main
