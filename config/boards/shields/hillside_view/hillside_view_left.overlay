@@ -66,6 +66,7 @@
         device = <&glidepoint>;
         input-processors = <
             &pointer_accel
+            &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
             >;
     };
 };
