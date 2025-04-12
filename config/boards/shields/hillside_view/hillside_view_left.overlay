@@ -54,8 +54,8 @@
     track-remainders;
     min-factor = <500>;        // 0.5x at very slow speeds
     max-factor = <4000>;       // 4.0x at fast speeds
-    speed-threshold = <800>;   // 800 counts/sec for 1x
-    speed-max = <100>;        // 4000 counts/sec for maximum acceleration
+    speed-threshold = <80>;   // 800 counts/sec for 1x
+    speed-max = <400>;        // 4000 counts/sec for maximum acceleration
     acceleration-exponent = <2>; // quadratic curve
 };
 
