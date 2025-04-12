@@ -52,10 +52,10 @@
 &pointer_accel {
     input-type = <INPUT_EV_REL>;
     track-remainders;
-    min-factor = <500>;        // 0.8x at very slow speeds
-    max-factor = <4000>;       // 3.0x at fast speeds
-    speed-threshold = <600>;  // 1200 counts/sec for 1x
-    speed-max = <3000>;        // 6000 counts/sec for max accel
+    min-factor = <500>;        // 0.5x at very slow speeds
+    max-factor = <4000>;       // 4.0x at fast speeds
+    speed-threshold = <800>;   // 800 counts/sec for 1x
+    speed-max = <4000>;        // 4000 counts/sec for maximum acceleration
     acceleration-exponent = <2>; // quadratic curve
 };
 
