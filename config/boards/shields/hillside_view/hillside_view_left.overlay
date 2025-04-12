@@ -54,8 +54,8 @@
     track-remainders;
     min-factor = <500>;        // 0.8x at very slow speeds
     max-factor = <4000>;       // 3.0x at fast speeds
-    speed-threshold = <1200>;  // 1200 counts/sec for 1x
-    speed-max = <5000>;        // 6000 counts/sec for max accel
+    speed-threshold = <600>;  // 1200 counts/sec for 1x
+    speed-max = <3000>;        // 6000 counts/sec for max accel
     acceleration-exponent = <2>; // quadratic curve
 };
 
@@ -68,7 +68,7 @@
             &pointer_accel
             >;
         // xy-swap;
-        // y-invert;
+        y-invert;
         // x-invert;
     };
 };
