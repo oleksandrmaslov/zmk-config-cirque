@@ -67,8 +67,5 @@
         input-processors = <
             &pointer_accel
             >;
-        // xy-swap;
-        y-invert;
-        // x-invert;
     };
 };
