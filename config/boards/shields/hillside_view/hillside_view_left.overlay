@@ -52,6 +52,7 @@
 &pointer_accel {
     input-type = <INPUT_EV_REL>;
     track-remainders;
+    time-window-ms = <1>;  // 1ms = 1000Hz, matches common wired rate
     min-factor = <500>;        // 0.5x at very slow speeds
     max-factor = <4000>;       // 4.0x at fast speeds
     speed-threshold = <80>;   // 800 counts/sec for 1x
