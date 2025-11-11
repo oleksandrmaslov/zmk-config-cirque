@@ -15,7 +15,7 @@
 #define SYM 2
 #define NAV 3
 #define SET 4
-// #define DBLO 5
+//  #define DBLO 5
 
 #define MO_TO(layer) &mo_to layer layer   // Macro to apply momentary-layer-on-hold/to-layer-on-tap to a specific layer
 
