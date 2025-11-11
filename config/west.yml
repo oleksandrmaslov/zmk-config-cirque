@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk-pointing-acceleration
       remote: oleksandrmaslov
-      revision: main
+      revision: fixed
     - name: cirque-input-module
       remote: halfdane
       revision: main
